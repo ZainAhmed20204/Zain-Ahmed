@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .frame {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .background-image {
+      width: 100%;
+      height: 300px; /* Adjust the height as needed */
+      background-image: url('background.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+    }
+
+    .radio-buttons {
+      margin: 20px 0;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      padding: 10px;
+      margin: 0 10px;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: #e74c3c;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="background-image"></div>
+    
+    <div class="radio-buttons">
+      <input type="radio" id="intermediate" name="education" value="intermediate">
+      <label for="intermediate">Intermediate</label>
+
+      <input type="radio" id="high-school" name="education" value="high-school">
+      <label for="high-school">High School</label>
+
+      <input type="radio" id="bachelors" name="education" value="bachelors">
+      <label for="bachelors">Bachelors</label>
+    </div>
+  </div>
+
+</body>
+</html>
